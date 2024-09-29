@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Days</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <div class="lunch">
+            <div class="name">Unknow Devil</div>
+            <div class="lunch-detail">
+    <a href="#">Website Is under Mainteanance</a>
+                <h2>We're <span> Launching </span> Soon</h2>
+                <div class="lunch-time">
+                    <div>
+                        <p id="days">00</p>
+                        <span>Days</span>
+                    </div>
+                    <div>
+                        <p id="hrs">00</p>
+                        <span>Hours</span>
+                    </div>
+                    <div>
+                        <p id="min">00</p>
+                        <span>Minutes</span>
+                    </div>
+                    <div>
+                        <p id="sec">00</p>
+                        <span>Second</span>
+                    </div>
+                </div>
+                <button>Learn More </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+      var countDownDate = new Date("Sep 7, 2024 10:00:00").getTime();
+      var x= setInterval(function(){
+        var now =new Date().getTime();
+        var distance =countDownDate-now;
+
+     
+
+      var days=Math.floor(distance / (1000 * 60 *60 * 24));
+      var hrs=Math.floor((distance % (1000 * 60 *60 * 24)) /(1000 * 60 *60));
+      var min=Math.floor((distance % (1000 * 60 *60)) / (1000 * 60 ));
+      var sec=Math.floor((distance % (1000 * 60 )) / 1000);
+      
+
+      document.getElementById("days").innerHTML=days;
+      document.getElementById("hrs").innerHTML=hrs;
+      document.getElementById("min").innerHTML=min;
+      document.getElementById("sec").innerHTML=sec;
+    },1000);
+    </script>
+</body>
+</html>

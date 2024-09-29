@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(14deg, rgb(47, 0, 65), rgb(0, 0, 92));
+}
+/* main Projects Star */
+.lunch{
+
+    height: 100%;
+    position: relative; 
+}
+.lunch::selection{
+    background-color: blueviolet;
+}
+/* project Name */
+.lunch .name{
+    font-size: 15px;
+    padding:15px;
+    margin: 0 45px;
+    color: rgb(212, 0, 0);
+    font-weight: 700;
+
+}
+/* project detail */
+.lunch .lunch-detail{
+    position: absolute;
+    top: 190px;
+    left: 45px;
+}
+.lunch .lunch-detail a{
+    font-size: 15px;
+    color:white;
+    text-decoration: none;
+    padding: 25px 0;
+    gap: 15px;
+}
+.lunch-detail h2{
+    font-size: 45px;
+    font-weight: 800;
+    color: white;
+}
+.lunch-detail h2 span{
+    color: red;
+}
+/* project Time ---> changes in JS */
+.lunch-time{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.lunch-time div{
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    margin: 15px 0 10px 0;
+    color: whitesmoke;
+}
+.lunch-time div span{
+    font-size: 15px;
+    color: aqua;
+    border-bottom: 2px solid blue;
+    padding: 8px 7px;
+    cursor: pointer;
+}
+/* Button Learn more */
+button{
+    height: 40px;
+    width: 150px;
+    border-radius: 15px 0 15px  0;
+    background-color: rgb(0, 175, 178);
+    font-weight: 700;
+    font-size: 14px;
+    color: blue;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin: 25px 0;
+    box-shadow: 1px 0 5px rgb(0, 178, 0);
+}
+button::before{
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    top: 229px;
+    background-color: white;
+    left: 130px;
+    border-radius: 50%;
+}
+button:hover{
+    color:rgb(6, 251, 255);
+    background-color: blue;
+    box-shadow: 5px 5px 8px yellow;
+}
+button::before:hover{
+    background-color: yellow;
+    color: yellow;
+}
