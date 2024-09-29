@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* height: 100vh;
+    width: 100%; */
+    background-color:#548687;
+    text-align: center;
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    height: 70vh;
+    
+}
+h1{
+    margin: 15px;
+    font-size: 45px;
+    font-weight: 800;
+    color: red;
+    border-bottom: 2px solid purple;
+}
+.game{
+    margin: 35px;
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.7vmin;
+    
+}
+.box{
+    background-color:#ffffc7;
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    color: rgb(242, 68, 68);
+    font-weight:500;
+    border: none;
+    box-shadow: 0 0 10px rgb(24, 24, 24);
+    font-size: 10vmin;
+    text-shadow: 5px 0px 10px rgb(255, 89, 89);
+}
+.box:hover{
+    background-color: rgba(255, 237, 237, 0.286);
+    
+}
+
+
+
+
+.msg-container h2{
+    font-size: 45px;
+    margin: 180px 50px 50px 150px;
+}
+.new-btn {
+    height: 50px;width: 250px;
+   /* background-color: red;  */
+   margin: 200px;
+ 
+
+}
+.new-btn input{
+    height: 50px;
+    width: 250px;
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+    background-color: blue;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    margin-left: 150px;
+    padding: 15px;
+}
+
+.hide  {
+    display: none;
+}
+.reset-btn input{
+    height: 50px;
+    width: 250px;
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 255, 21);
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*.box{
+    height:100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+ .msg-container h2{
+    font-size: 45px;
+    margin: 5px;
+}
+.new-btn {
+    height: 50px;width: 250px;
+    /* background-color: red; 
+
+}
+.new-btn input{
+    height: 100%;
+    width: 100%;
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+    background-color: blue;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+}
+.hide  {
+    display: none;
+}
+
+.main{
+    height: 200px;
+    width: 500px;
+    background-color: lightskyblue;
+  
+}
+.game{
+    height: 200px; width: 900px;  display: flex;
+    flex:wrap;
+
+} */
+
+
