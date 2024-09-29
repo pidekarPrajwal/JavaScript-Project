@@ -1,0 +1,92 @@
+*{
+    margin :0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(10, 41, 99);
+
+}
+
+/* for edited a page */
+.page{
+    
+    width: 90%;
+    margin: 12%;
+    padding: 15px;
+}
+/*  edited a name */
+.page .name{
+   
+    display: flex;
+    align-items:center;
+    
+
+}
+/* edited name in p */
+.page .name p{
+    font-size: 45px;
+    font-weight: 600;
+    padding: 6px;
+    color: white;
+}
+/* edited name in span */
+.page .name p span{
+    color: green;
+    border-bottom: 3px solid green;
+    padding: 5px;
+}
+/* for input boxes  */
+.input-boxes{
+    background-color: white;
+    height: 60px;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    border-radius: 11px;
+}
+#input{
+    height: 100%; width: 100%;
+    margin: 15px; 
+    border: none;
+    outline    :none;
+    font-size: 21px;
+    color: black;
+    
+}
+
+img{
+    /* background-color: white; */
+    padding: 12px;
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 30px;
+   margin-right: 9px;
+   cursor: pointer;
+   object-fit: cover;
+}
+#OTP{
+    padding: 19px;
+    margin: 25px;
+    height: 50px;
+    width: 250px;
+    background-color: rgb(67, 222, 59);
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 22px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    outline: none;
+}
+#OTP:hover{
+    box-shadow: 0px 0px 15px rgb(203, 248, 165);
+}
+#OTP:active{
+    box-shadow: inset 0 0 10px green;
+}

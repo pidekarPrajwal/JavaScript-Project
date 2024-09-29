@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Generator || javascript Project </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <div class="page">
+            <div class="name">
+                <p>Generate a  <br><span>Random OTP</span></p>
+            </div>
+            <div class="input-boxes">
+                <input type="text" placeholder="Click on Generate OTP " id="input"> <img src="../../images/notebookpencil.png">
+                
+            </div>
+            <button id="OTP" onclick="showOTP()"> <img src="../../images/gojo.png" id="copy" onclick="copy()"> Genrate OTP </button>
+        </div>
+    </div>
+
+    <script>
+        //  here is our javaScript code
+    function showOTP(){
+        var digits ="0123456789"; // digits
+        let number ='';// number has empty
+
+            //for loop for 4 digit code
+        for(let i=0; i<4;i++){
+            number+= digits[Math.floor(Math.random()*10)];
+        }
+            // input this 4 digit OTP in #input
+        var input=document.querySelector(".input-boxes #input")
+        input.innerHTML=number;
+        input.value=number;// main step
+    }    
+   
+
+    //for copy otp
+    function copy(){
+        input.select();
+        document.execCommand("copy");
+    }
+    
+    </script>
+</body>
+</html>
