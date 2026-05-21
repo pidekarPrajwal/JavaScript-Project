@@ -4,4 +4,3 @@ JAVASCRIPT
 Make a JavaScript Project
 for testing my js knowldge
   
-   
